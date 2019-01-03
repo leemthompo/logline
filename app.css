@@ -88,10 +88,9 @@ a {
 	body {
 		padding: 0.25rem;
 	}
-	svg {
+	.main_logo, .footer_logo {
 		display: none;
 	}
-
 	h3 { 
 		text-align: center
 	}
