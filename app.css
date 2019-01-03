@@ -46,7 +46,11 @@ main {
 }
 
 footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	font-family: 'Lato', serif;
 	background: black;
 	color: white;
 	padding: 2rem;
@@ -57,4 +61,13 @@ svg {
 	position: absolute;
 	bottom: -10.5rem;
 	left: -8rem;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Lato', serif;
+	color: #3F3E3E;
+	padding: 1em;
+	border: 1px solid #00ff90; 
+	border-radius: 2px;
 }
