@@ -64,10 +64,24 @@ svg {
 }
 
 a {
+	margin-top: 2em;
 	text-decoration: none;
 	font-family: 'Lato', serif;
 	color: #3F3E3E;
 	padding: 1em;
 	border: 1px solid #00ff90; 
 	border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 0.25rem;
+	}
+	svg {
+		display: none;
+	}
+
+	h3 { 
+		text-align: center
+	}
 }
