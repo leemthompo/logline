@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+:root {
+	--primary: #0ee688;
+	--grey: #bfbfbf;
+}
 html {
   box-sizing: border-box;
   height: 100%;
@@ -17,22 +21,22 @@ h1,h2,h3 {
 	font-family: 'Lato', serif;
 	font-size: 3rem;
 	font-weight: bold;
-	/* color: #3F3E3E; */
+	color: var(--grey);
 }
 h3 {
 	font-size: 2rem;
-	background: #00ff90;
+	background: var(--primary);
 	font-weight: normal;
 	color: white;
 	padding: 0.5rem 1rem;
 	border-radius: 2px;
-	box-shadow: 3px 2px 3px 0px #00ff90;
+	box-shadow: 3px 2px 3px 0px var(--primary);
 }
 p {
 	font-size: 1.25rem;
 	font-family: 'Lato', serif;
 	font-weight: normal;
-	color: #8d8d8d;
+	color: var(--grey);
 }
 
 main {
@@ -46,7 +50,7 @@ main {
 }
 .main_title {
 	padding: 1em;
-	border-bottom: 2px solid #00ff90;
+	border-bottom: 2px solid var(--primary);
 }
 
 footer {
@@ -80,18 +84,16 @@ a {
 	font-family: 'Lato', serif;
 	color: #3F3E3E;
 	padding: 1em;
-	border: 1px solid #00ff90; 
+	border: 1px solid var(--primary); 
 	border-radius: 2px;
 }
 
 @media only screen and (max-width: 600px) {
-	body {
-		padding: 0.25rem;
-	}
 	.main_logo, .footer_logo {
 		display: none;
 	}
 	h3 { 
-		text-align: center
+		text-align: center;
+		box-shadow: none;
 	}
 }
