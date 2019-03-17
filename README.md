@@ -14,4 +14,4 @@ this is the original **logline** repo
 
 ### Technical Specifications
 
-logline uses [SkyFlok](https://www.skyflok.com/us/) for file sharing. SkyFlok provides distributed cloud storage, that uses encryption based on random linear network coding. 
+logline uses [SkyFlok](https://www.skyflok.com/us/) for file sharing. SkyFlok is a GDPR-native system that provides distributed cloud storage, using encryption based on random linear network coding. 
