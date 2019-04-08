@@ -12,6 +12,7 @@ this is the original **logline** repo
 1. summaries
 1. note-taking 
 
-### Technical Specifications
-
-logline uses [SkyFlok](https://www.skyflok.com/us/) for file sharing. SkyFlok is a GDPR-native system that provides distributed cloud storage, using encryption based on random linear network coding. 
+### Intellecual Influences
+1. John Moriarty
+1. Shakespeare
+1. Claude Shannon
