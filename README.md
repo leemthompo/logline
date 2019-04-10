@@ -1,5 +1,5 @@
 # logline
-this is the original **logline** repo
+this is the original **log**line repo
 
 
 
@@ -7,7 +7,7 @@ this is the original **logline** repo
 
 ## What is logline? 
 
-**logline** is a website for technical communication that provides 3 key services: 
+**log**line is a website for technical communication that provides 3 key services: 
 1. documentation
 1. summaries
 1. note-taking 
