@@ -12,7 +12,4 @@ this is the original **logline** repo
 1. summaries
 1. note-taking 
 
-### Intellecual Influences
-1. John Moriarty
-1. Shakespeare
-1. Claude Shannon
+
