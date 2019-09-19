@@ -88,6 +88,10 @@ a {
 	border-radius: 2px;
 }
 
+a:hover {
+	background-color:#0ee688 ;
+  }
+
 @media only screen and (max-width: 600px) {
 	.main_logo, .footer_logo {
 		display: none;
