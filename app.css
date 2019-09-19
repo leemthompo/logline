@@ -2,7 +2,6 @@
 
 :root {
 	--primary: #0ee688;
-	--grey: #bfbfbf;
 }
 html {
   box-sizing: border-box;
@@ -21,7 +20,7 @@ h1,h2,h3 {
 	font-family: 'Lato', serif;
 	font-size: 3rem;
 	font-weight: bold;
-	color: var(--grey);
+	color: black;
 }
 h3 {
 	font-size: 2rem;
@@ -36,7 +35,7 @@ p {
 	font-size: 1.25rem;
 	font-family: 'Lato', serif;
 	font-weight: normal;
-	color: var(--grey);
+	color: black;
 }
 
 main {
