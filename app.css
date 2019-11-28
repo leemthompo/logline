@@ -105,6 +105,9 @@ a {
 
 a:hover {
 	background-color:#0ee688 ;
+	transition: background .75s ease-in-out;
+  }
+  
   }
 
 @media only screen and (max-width: 600px) {
