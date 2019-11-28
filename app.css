@@ -95,11 +95,11 @@ a {
 	font-family: 'Lato', serif;
 	color: #3F3E3E;
 	padding: 1em;
-  margin: 75px 75px 50px 50px;
+	margin: 75px 75px 50px 50px;
 	border: 1px solid var(--primary); 
-	border-radius: 2px;
-  clear: both;
-  position: relative;
+	border-radius: 15px 15px;
+	clear: both;
+	position: relative;
 
 }
 
