@@ -35,7 +35,9 @@ h1,h2,h3 {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: normal;
+
+    
 }
 
 h3 {
@@ -110,12 +112,12 @@ a {
 	text-decoration: none;
 	background-color: black;
   color: white;
-  font-size: 1.8vw;
+  font-size: 140%;
 	padding: 1em;
 	border: 1px solid black;
   margin-top: 10%;
 	border-radius: 3px 3px;
-      clear: both;
+	clear: both;
 	position: center;
   width: 50%;
 
