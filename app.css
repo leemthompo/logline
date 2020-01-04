@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
 :root {
 	--primary: #0ee688;
 }
@@ -7,46 +6,63 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
-}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 body {
+  background: black;
 	width: 100%;
 	margin: 0;
 	font-size: 16px;
-  	min-height: 400px;
-  	margin-bottom: 100px;
+  min-height: 400px;
+  margin-bottom: 50px;
+  
+    
+    
 }
+
+::selection {
+background-color:  var(--primary);
+color: black;
+}
+
 h1,h2,h3 {
-	font-family: 'Lato', serif;
-	font-size: 3rem;
+	
+  font-size: 300%;
 	font-weight: bold;
-	color: black;
-}
-h3 {
-	font-size: 2rem;
-	background: var(--primary);
-	font-weight: normal;
 	color: white;
-	padding: 0.5rem 1rem;
-	border-radius: 2px;
-	box-shadow: none;
 }
+
+h1 {
+    font-weight: 400;
+}
+
+h3 {
+	font-size: 3.33vw;
+	font-weight: normal;
+	color: var(--primary);
+  text-align: center;
+	padding: 0.5rem 1rem;
+	box-shadow: none;
+  border-radius: 3px 3px;
+  position: center;
+  width: 40%;
+
+}
+
 p {
 	font-size: 1.1rem;
-	font-family: 'Lato', serif;
 	font-weight: normal;
 	color: black;
-        width: 50%;
+  width: 50%;
 }
 
 div {
-  font-family: 'Lato', serif;
 	font-weight: normal;
 	color: black;
-        width:50%;
-        background: #FFFFBF;
+  width: 50%;
+  background: #FFFFBF;
 }
 
 main {
@@ -58,6 +74,7 @@ main {
 	width: 100%;
 	height: 100%;
 }
+
 .main_title {
 	padding: 1em;
 	border-bottom: 2px solid var(--primary);
@@ -69,11 +86,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	font-family: 'Lato', serif;
-	background: white;
-	color: black;
-	padding: 2rem;
-	height: 600px;
+	background: black;
+	color: white;
+	padding: 1rem;
+  margin-top: 25%;
+	height: 50%;
   
 }
 
@@ -87,27 +104,63 @@ footer {
 	position: absolute;
 	bottom: 0;
 	right: 2rem;
-	transform: rotate(270deg)
+	transform: rotate(270deg);
 }
 a {
-	margin-top: 1em;
 	text-decoration: none;
-	font-family: 'Lato', serif;
-	color: #3F3E3E;
+	background-color: black;
+  color: white;
+  font-size: 1.8vw;
 	padding: 1em;
-	margin: 75px 75px 50px 50px;
-	border: 1px solid var(--primary); 
-	border-radius: 15px 15px;
-	clear: both;
-	position: relative;
+	border: 1px solid black;
+  margin-top: 10%;
+	border-radius: 3px 3px;
+      clear: both;
+	position: center;
+  width: 50%;
 
 }
 
+
+
 a:hover {
-	background-color:#0ee688 ;
-	transition: background .75s ease-in-out;
+  border: 2px solid  var(--primary);
+	border-radius: 3px 3px;
+	transition: border 2s ease-in-out;
+  
   }
   
+  .quick_quote {
+  font-size: 2.1vw;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary);
+  border: 2px solid  var(--primary);
+	border-radius: 3px 3px;
+}
+
+.quick_quote:hover {
+  background: var(--primary);
+  color: black;
+  transition: background 0.5s ease-in-out;
+
+
+}
+  
+.services {
+  font-size: 2.1vw;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid  var(--primary);
+	border-radius: 3px 3px;
+
+  }
+  
+  .services:hover {
+    color: var(--primary);
+
+    transition: background 0.5s ease-in-out;
   }
 
 @media only screen and (max-width: 600px) {
@@ -118,4 +171,6 @@ a:hover {
 		text-align: center;
 		box-shadow: none;
 	}
+  
+
 }
