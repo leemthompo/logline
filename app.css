@@ -41,7 +41,7 @@ h1 {
 }
 
 h3 {
-	font-size: 3.33vw;
+	font-size: 200%;
 	font-weight: normal;
 	color: var(--primary);
   text-align: center;
@@ -167,12 +167,22 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 	.main_logo, .footer_logo {
-		display: none;
-	}
-	h3 { 
-		text-align: center;
-		box-shadow: none;
-	}
-  
-
+	  display: none;
+    }
+    
+    a {
+      font-size: 100%;
+      }
+      
+     h1, h3 {
+       font-size: 150%;
+     }
+     
+     .quick_quote {
+       font-size: 2.5vw;
+ 
 }
+     
+}
+
+
