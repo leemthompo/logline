@@ -174,7 +174,11 @@ a:hover {
       font-size: 100%;
       }
       
-     h1, h3 {
+      h1 {
+       font-size: 200%;
+     }
+     
+     h3 {
        font-size: 150%;
      }
      
