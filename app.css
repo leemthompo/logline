@@ -29,19 +29,19 @@ color: black;
 
 h1,h2,h3 {
 	
-  font-size: 300%;
 	font-weight: bold;
 	color: white;
 }
 
 h1 {
     font-weight: normal;
+    font-size: 400%;
 
     
 }
 
 h3 {
-	font-size: 200%;
+	font-size: 275%;
 	font-weight: normal;
 	color: var(--primary);
   text-align: center;
