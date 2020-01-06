@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-:root {
-	--primary: #0ee688;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+
 html {
   box-sizing: border-box;
   height: 100%;
