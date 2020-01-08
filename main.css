@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas: "header header header""nav main main""footer footer footer";
+  grid-gap: 4em;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas: "header header header""nav nav nav""main main aside""footer footer footer";
+    display: block;
+    
+  }
+  .container nav: 
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: block;
+  }
+  
+  .container header {
+    font-size: 100%;
+    }
+    
+    
+}
+
+.container header {
+  grid-area: header;
+  margin-bottom: 5px;
+  background-color: black;
+  color: #0ee688;
+  text-align: center;
+  font-size: 1.78vw;
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-bottom: 1px solid #0ee688;
+  border-radius: 2px 2px;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+
+
+
+
+.container nav {
+  grid-area: nav;
+  background-color: black;
+  color: white;
+  padding: 0px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  border: 1px solid #0ee688;
+  border-radius: 2px 2px;
+  background-color: black;
+  color: #0ee688;
+}
+
+li a {
+  display: block;
+  color: #0ee688;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  align-items: left;
+}
+
+/* Change the link color on hover */
+ a:hover {
+  background: #0ee688;
+  color: black;
+  transition: background 0.4s ease-in-out;
+}
+
+
+.container main {
+  grid-area: main;
+  background-color: white;
+  color: black;
+  margin-right: 30%;
+  margin-top: 0%;
+  margin-left: 10%;
+  padding: 5%;
+  border-radius: 2px 2px;
+  border-color: white;
+  font-size: 1.5vw;
+}
+
+
+
+.container footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  }
+
+::selection {
+  background-color: #0ee688;
+  color: black;
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+  .container nav {
+    margin-top: 10%;
+  }
+
+  
+  .container header {
+    font-size: 100%;
+    display: block;
+
+    }
+    
+  .container main {
+    font-size: 15px;
+    width: 65%;
+    display: block;
+}
+
+  
+
+}
+
+
+}
+ 
+
+
+    
+    
