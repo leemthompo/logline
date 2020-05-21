@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  background: black;
+  background: white;
+
+
 }
 
 .container {
   display: grid;
   grid-template-rows: 1fr 5fr 1fr;
   grid-template-columns: 2fr 5fr 3fr;
-  grid-template-areas: "header header header""nav main main""footer footer footer";
+  grid-template-areas: "header header header""nav main main""whiteter whiteter whiteter";
   grid-gap: 4em;
   height: 100vh;
 }
@@ -16,39 +18,40 @@ body {
   .container {
     grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-columns: 2fr 5fr 3fr;
-    grid-template-areas: "header header header""nav nav nav""main main aside""footer footer footer";
+    grid-template-areas: "header header header""nav nav nav""main main aside""whiteter whiteter whiteter";
     display: block;
-    
+
   }
-  .container nav: 
+
+  .container nav:
 }
 
 @media (max-width: 480px) {
   .container {
     display: block;
   }
-  
+
   .container header {
     font-size: 100%;
-    }
-    
-    
+  }
+
+
 }
 
 .container header {
   grid-area: header;
   margin-bottom: 5px;
   background-color: black;
-  color: #0ee688;
+  color: white;
   text-align: center;
   font-size: 1.78vw;
   padding: 10px;
   border: 1px;
   border-style: solid;
   border-color: black;
-  border-bottom: 1px solid #0ee688;
+  border-bottom: 1px solid black;
   border-radius: 2px 2px;
-  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -64,8 +67,8 @@ body {
 
 .container nav {
   grid-area: nav;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 0px;
   margin-left: 10%;
   margin-bottom: 10%;
@@ -73,42 +76,48 @@ body {
 
 }
 
-ul {
+
+
+.sidenavvy {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 200px;
-  border: 1px solid #0ee688;
+  border: 1px solid grey;
   border-radius: 2px 2px;
-  background-color: black;
-  color: #0ee688;
+  background-color: white;
+  color: black;
 }
 
 li a {
   display: block;
-  color: #0ee688;
+  color: black;
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   align-items: left;
 }
 
+a {color: white;
+  text-decoration:none;
+  }
+
 /* Change the link color on hover */
- a:hover {
-  background: #0ee688;
-  color: black;
+a:hover {
+  background: black;
+  color: white;
   transition: background 0.4s ease-in-out;
 }
 
 .logo {
   background-color: black;
-  color: #0ee688;
+  color: white;
   text-decoration: none;
 }
 
 .logo:hover {
   background-color: black;
-  color: white;
+  color: grey;
   text-decoration: none;
 }
 
@@ -120,57 +129,114 @@ li a {
   margin-top: 0%;
   margin-left: 10%;
   padding: 5%;
-  border-radius: 2px 2px;
-  border-color: white;
-  font-size: 1.5vw;
+  border-style: solid;
+  border-radius: 1px;
+  border-width: 2px;
+  border-color: black;
+  font-size: 1.66vw;
+  width: 66%;
+
 }
 
 
 
-.container footer {
-  grid-area: footer;
-  background-color: black;
-  color: white;
+.container whiteter {
+  grid-area: whiteter;
+  background-color: white;
+  color: black;
   align-items: center;
   padding: 5%;
   display: flex;
   justify-content: center;
   margin-top: 20%;
-  }
+}
 
 ::selection {
-  background-color: #0ee688;
+  background-color: black;
+  color: white;
+}
+
+/* Button Groups */
+
+.btn-group button {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  /* Green background */
+  border: 1px solid black;
+  border-radius: 3px;
+  /* Green border */
+  color: white;
+  /* White text */
+  padding: 10px 24px;
+  /* Some padding */
+  cursor: pointer;
+  /* Pointer/hand icon */
+  float: left;
+  /* Float the buttons side by side */
+  margin: 5%;
+  font-size: 85%;
+  margin-top: 50px;
+}
+
+.inverse button:hover {
+  background-color: white;
+  /* Green background */
+  border: 1px solid green;
+  /* Green border */
   color: black;
+  /* White text */
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+  /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  transform: translateY(-1px);
+  color: lightgrey;
+  box-shadow: 1000px 1000px 1000px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 
 @media only screen and (max-width: 800px) {
-  
+
   .container nav {
     margin-top: 10%;
   }
 
-  
+
   .container header {
     font-size: 100%;
     display: block;
 
-    }
-    
+  }
+
   .container main {
     font-size: 15px;
     width: 65%;
     display: block;
-}
+  }
 
-  
+  .btn-group button {
+    font-size: 100%;
+  }
 
-}
+  @media only screen and (max-width: 500px) {
+    .btn-group button {
+      font-size: 75%;
 
+@media only screen and (max-width: 400px) {
+    .btn-group button {
+      font-size: 10px;
 
-}
- 
-
-
-    
-    
+    }
