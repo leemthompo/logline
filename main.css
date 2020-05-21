@@ -215,7 +215,7 @@ table th {
 .btn-group:after {
   content: "";
   clear: both;
-  display: table;
+  display: block;
 }
 
 .btn-group button:not(:last-child) {
