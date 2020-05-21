@@ -40,7 +40,7 @@ body {
 
 .container header {
   grid-area: header;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   background-color: black;
   color: white;
   text-align: center;
