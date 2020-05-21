@@ -140,16 +140,20 @@ a:hover {
 
 
 
-.container whiteter {
-  grid-area: whiteter;
-  background-color: white;
-  color: black;
-  align-items: center;
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-  margin-top: 20%;
+.container footer {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 1rem;
+  margin-top: 25%;
+	height: 50%;
+  
 }
+
 
 ::selection {
   background-color: black;
