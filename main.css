@@ -142,14 +142,14 @@ a:hover {
 
 .container footer {
 	display: flex;
-	position: relative;
+	position: block;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background: black;
-	color: white;
+	background: white;
+	color: black;
 	padding: 1rem;
-  margin-top: 25%;
+        margin-top: 50%;
 	height: 50%;
   
 }
