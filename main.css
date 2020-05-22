@@ -199,6 +199,7 @@ a:hover {
   /* Float the buttons side by side */
   margin: 5%;
   font-size: 85%;
+  font-weight: 600;	
   margin-top: 50px;
 }
 
