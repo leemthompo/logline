@@ -161,23 +161,22 @@ a:hover {
 }
 
 /* Table */
-table {
+#pricetable {
     border-collapse:collapse;
     margin:00%;
     width: 100%;
 }
 
-table td {
+#pricetable td {
    border:1px solid lightgrey;
    text-align: center;
 
 }
-table th {
+#pricetable th {
   text-align: center;
 }
 
-.normallist {
-  li
+
 
 /* Button Groups */
 
@@ -215,7 +214,7 @@ table th {
 .btn-group:after {
   content: "";
   clear: both;
-  display: block;
+  display: table;
 }
 
 .btn-group button:not(:last-child) {
