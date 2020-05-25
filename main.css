@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: fit-content;	
 
 }
 
@@ -135,7 +136,7 @@ a:hover {
   border-radius: 1px;
   border-width: 2px;
   border-color: black;
-  font-size: 1.66vw;
+  font-size: 1em;
   width: 66%;
 
 }
@@ -163,7 +164,7 @@ a:hover {
 }
 
 /* Table */
-#pricetable {
+/* #pricetable {
     border-collapse:collapse;
     margin:00%;
     width: 100%;
@@ -176,8 +177,31 @@ a:hover {
 }
 #pricetable th {
   text-align: center;
+} */
+
+#pricetable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
+#pricetable th, td {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+#pricetable td {
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+#pricetable thead th {
+  border-bottom: 2px solid hsl(0, 0%, 70%);
+}
+
+# pricetable tfoot th {
+  border-top: 2px solid hsl(0, 0%, 70%);
+}
 
 
 /* Button Groups */
