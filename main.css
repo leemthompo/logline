@@ -130,6 +130,7 @@ a:hover {
   color: black;
   margin-right: 30%;
   margin-top: 0%;
+  margin-bottom: 10%;
   margin-left: 10%;
   padding: 5%;
   border-style: solid;
@@ -201,6 +202,24 @@ a:hover {
 
 # pricetable tfoot th {
   border-top: 2px solid hsl(0, 0%, 70%);
+}
+
+/* blockquote */
+
+blockquote {
+  border-left: 5px solid grey;
+  padding: 10px;
+  font-weight: 600;
+
+}
+
+/* Preformatted Text  */
+pre {
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+    border-radius: 4px;
+    background: hsl(210, 28%, 93%);
 }
 
 
