@@ -112,6 +112,32 @@ a:hover {
   transition: background 0.4s ease-in-out;
 }
 
+/* Ordered lists */
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  margin: 0.25em;
+}
+
+li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ol li:before {
+  margin-right: 10px;
+  margin: 0.5em;
+  content: counter(item);
+  background: lightgrey;
+  border-radius: 100%;
+  color: black;
+  font-weight: 600;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+}
+
 .logo {
   background-color: black;
   color: white;
