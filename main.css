@@ -178,6 +178,50 @@ ol li:before {
 }
 
 
+/* Table of Contents*/
+
+#toc_container {
+    font-family: Helvetica, sans-serif;
+    background: #24292f none repeat scroll 0 0;
+    display: table;
+    text-align: left;
+    margin-left:1px;
+    margin-right: 95%;
+    margin-top: 7.5em;
+    margin-bottom: 1em;
+    border:solid black 1px;
+    border-radius: 2px;
+    padding: 5px;
+    width: 50px;
+}
+
+.toc_title {
+    font-weight: 500;
+    font-size: 50%;
+    text-align: left;
+    padding: 5%;
+    margin-top:10px;
+    margin-right:1em;
+    width: 190px;
+    text-decoration:none;
+    }
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+
+}
+
+.toc_title:hover {
+    color: grey;
+    }
+
+.toclink {
+  text-decoration: none;
+  list-style: none; 
+  border:none; 
+  color:white; 
+  font-size: 175%; 
+  font-weight:600}
 
 .container footer {
 	display: flex;
