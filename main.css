@@ -111,6 +111,7 @@ a {color: white;
 a:hover {
   background: black;
   color: white;
+  font-weight: 500;
   transition: background 0.4s ease-in-out;
 }
 
