@@ -114,12 +114,7 @@ a:hover {
   font-weight: 500;
   transition: background 0.4s ease-in-out;
 }
-/* Ordered lists */
 
-ul li {
-    margin: 0.5em;
-
-}
 
 /* Ordered lists */
 
@@ -183,20 +178,20 @@ ol li:before {
 #toc_container {
     font-family: Helvetica, sans-serif;
     background: black none repeat scroll 0 0;
-    display: table;
+    display: block;
     text-align: left;
     margin-left:1px;
-    margin-right: 95%;
+    margin-right: 10%;
     margin-top: 7.5em;
     margin-bottom: 1em;
     border:solid black 1px;
     border-radius: 2px;
     padding: 5px;
-    width: 50px;
+    width: 200px;
 }
 
 .toc_title {
-    font-weight: 500;
+    font-weight: 200;
     font-size: 50%;
     text-align: left;
     padding: 5%;
@@ -221,7 +216,9 @@ ol li:before {
   border:none; 
   color:white; 
   font-size: 175%; 
-  font-weight:600}
+  font-weight:200}
+
+
 
 .container footer {
 	display: flex;
