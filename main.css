@@ -2,8 +2,10 @@ body {
   margin: 0;
   background: white;
   -webkit-font-smoothing: antialiased;
+}
 
-
+h1 {
+  font-weight: normal;	
 
 }
 
