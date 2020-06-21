@@ -8,6 +8,10 @@ h1 {
   font-weight: normal;	
 }
 
+h2 {
+  font-weight: 500;	
+}
+
 hr {
   border-top: 1px solid gainsboro;
 }
