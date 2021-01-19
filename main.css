@@ -379,6 +379,12 @@ pre {
 
   }
 
+  .sidenavvy {
+    visibility:hidden;
+    display: none;
+
+  }
+
   .container main {
     font-size: 15px;
     width: 65%;
