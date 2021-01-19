@@ -120,13 +120,14 @@ li a {
   align-items: left;
 }
 
-a {color: white;
-  text-decoration:none;
+a {
+    color: #00afff;
+    text-decoration:none;
   }
 
 /* Change the link color on hover */
-a:hover {
-  background: black;
+li a:hover {
+  background: gray;
   color: white;
   transition: background 0.4s ease-in-out;
 }
