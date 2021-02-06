@@ -221,6 +221,11 @@ h2 {
   }
   
   
+  code {
+      color: #f92672;
+  }
+
+
   /* Button Groups */
   
   .btn-group button {
