@@ -214,6 +214,7 @@ h2 {
   /* Preformatted Text  */
   pre {
       max-width: 100%;
+      padding: 1rem 1.4rem;
       overflow: auto;
       border-radius: 4px;
       background: #282c34;
