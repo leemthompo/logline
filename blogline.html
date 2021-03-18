@@ -117,12 +117,13 @@ from bs4 <span class="hljs-keyword">import</span> BeautifulSoup
 </li>
 </ol>
 <h2 id="coda-ockhams-razor-in-the-terminal">Coda: Ockham’s Razor in the terminal</h2>
-<h2 id="plain-text-for-the-win">Plain text for the win</h2>
+<hr>
+<h3 id="plain-text-for-the-win">Plain text for the win</h3>
 <p>While this was a nice little exercise in Python, a little digging showed that there were a number of middlemen to be cut out. Screenotate uses the Tesseract open-source OCR engine to parse the text from your screenshot and then generates a HTML file to serve you the text. It only takes a handful of goes around that merry-go-round before it gets tiresome.</p>
-<h2 id="shell-script-one-liner">Shell script one-liner</h2>
+<h3 id="shell-script-one-liner">Shell script one-liner</h3>
 <p>The easiest way to cut out the middleman is to just run Tesseract over your screenshots, spitting the text into a plaintext file for easy grepping, copying and editing. The benefits are numerous: you can batch your OCR work, centralize the text in a single file and using plaintext is a cleaner, more lightweight solution.</p>
 <p>The solution is a one-liner shell script:</p>
-<p><code>for i in *.png ; do tesseract "$i" stdout &gt;&gt; filename.txt;  done</code></p>
+<pre><code>for i in *.png ; do tesseract "$i" stdout &gt;&gt; filename.txt;  done</code></pre>
 <p>It’s just a for loop, the quintessence of computer automation, nothing more and nothing less. Now you can batch your OCR jobs and run everything in the terminal, in accordance with the scriptures. I chose to save the file as a <code>zsh</code> executable and use the alias <code>ocr</code> to call it. I’m now only ever 4 keystrokes away from launching a powerful optical recognition engine from the comfort of my own home.</p>
 
 
