@@ -50,6 +50,7 @@
     <main><article>
 <h1>The Read! Command in Vim</h1>
 <h2 id="the-basics">The Basics</h2>
+	    <hr>
 <p>You can use the read command to insert a file, or the output of a system command, into the current buffer:</p>
 <ul>
 <li><p><code>:r file.txt</code> will insert the file below the cursor in the current buffer.</p></li>
@@ -57,21 +58,26 @@
 </ul>
 <p>See the full details by typing <code>:help read</code>. Here is the example they chose in the official docs:</p>
 <figure>
-<img src="vimreaddocs.png" alt="image" /><figcaption aria-hidden="true">image</figcaption>
+<img src="vimreaddocs.png" alt="Vim help for read! command" /><figcaption aria-hidden="true"></figcaption>
 </figure>
 <h2 id="the-fun">The fun</h2>
+	    <hr>
 <p>The beauty of this command is that it helps you think about your <code>vim</code> buffer as a nexus or clearinghouse for all sorts of system commands.</p>
 <p>Say you have text sitting in various files or you have hacked together a little program to OCR snapshots of text — you can use the <code>read!</code> command to pull that text directly into your buffer without exiting, context switching or fooling around with an involved series of clipboard commands.</p>
 <h2 id="document-and-verify-simultaneously">Document and verify simultaneously</h2>
+	    <hr>
 <p>The <code>r!</code> command is very handy when you’re documenting a piece of source code. Imagine you’ve hacked together a little program called <code>sopranos.py</code> which simply pulls a random line from “The Sopranos” and prints it to <code>STDOUT</code>. If you want to write a simple How-To doc to explain how the script works, you can quote from the source code and insert examples of the program output, without exiting your editor buffer.</p>
 <p>If you type <code>:r! python3 sopranos.py</code> and the program works, it will spit out a random line from the script. The simplicity of this command belies its power: it allows you to verify, as you’re writing, that the script works —otherwise it will deface your buffer with an error message.</p>
 <p>If you want to quote particular lines from the program, use <code>head</code> or <code>tail</code> to filter the text. For example, use <code>:r! head -4 sopranos.py</code> to pull in the first four lines of your script, to document the import dependencies.</p>
 <h2 id="the-command-in-action">The command in action</h2>
+	    <hr>
 <p>In this video I use the <code>r!</code> command to pull in my <code>slug</code> template for blogposts. This slug at the top of a <code>markdown</code> file contains the key metadata for generating the final <code>html</code>, file as part of a static site generation workflow. A <code>slug</code> is a unique, human-readable identifier for a resource written in the very-cleverly-named-kebab-case.</p>
 <video width="100%" height="360" controls>
 <source src="vim_read.mov" type="video/mp4">
-<p>Your browser does not support the video tag. </video></p>
+Your browser does not support the video tag. </video>
 <h2 id="shell-power">Shell Power!</h2>
+	    <hr>
+
 <p>These functionalities are a first cousin to the <code>:!{shell command}</code> command. This allows you to call a shell command in Vim and you will be temporarily redirected to a terminal view to see the output. The beauty of the <code>read!</code> command is that you never even have to leave your <code>Vim</code> buffer to test computations, perform arithmetic or leverage the power of <code>Unix</code> pipelines.</p>
 
         </article></main>   
