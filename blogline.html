@@ -68,7 +68,7 @@
 	    <hr>
 <p>The <code>r!</code> command is very handy when you’re documenting a piece of source code. Imagine you’ve hacked together a little program called <code>sopranos.py</code> which simply pulls a random line from “The Sopranos” and prints it to <code>STDOUT</code>. If you want to write a simple How-To doc to explain how the script works, you can quote from the source code and insert examples of the program output, without exiting your editor buffer.</p>
 <p>If you type <code>:r! python3 sopranos.py</code> and the program works, it will spit out a random line from the script. The simplicity of this command belies its power: it allows you to verify, as you’re writing, that the script works —otherwise it will deface your buffer with an error message.</p>
-<p>If you want to quote particular lines from the program, use <code>head</code> or <code>tail</code> to filter the text. For example, use <code>:r! head -4 sopranos.py</code> to pull in the first four lines of your script, to document the import dependencies.</p>
+<p>To quote particular lines from the program, use <code>head</code> or <code>tail</code> to filter the text. For example, use <code>:r! head -4 sopranos.py</code> to pull in the first four lines of your script, to document the import dependencies.</p>
 <h2 id="the-command-in-action">The command in action</h2>
 	    <hr>
 <p>In this video I use the <code>r!</code> command to pull in my <code>slug</code> template for blogposts. This slug at the top of a <code>markdown</code> file contains the key metadata for generating the final <code>html</code>, file as part of a static site generation workflow. A <code>slug</code> is a unique, human-readable identifier for a resource written in the very-cleverly-named-kebab-case.</p>
