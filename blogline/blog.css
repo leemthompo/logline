@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Computer Modern Serif", serif;
+    font-style: normal;
+    font-weight: 400;}
+  
+  h1, .container header {
+      font-family: "Computer Modern Serif", serif;
+  
+  }
+  
+  h1 {
+      font-weight: normal;	
+      color:#00afff;
+  }
+
+h2 {
+    font-weight:normal;
+}
+  
+  hr {
+    border-top: 1px solid #eee;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas: "header header header""main main main";
+    grid-gap: 4em;
+    height: 100vh;
+    display: block;
+  
+  
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-rows: 1fr 1fr 5fr 1fr;
+      grid-template-columns: 2fr 5fr 3fr;
+      grid-template-areas: "header header header" "main main main";
+      display: block;
+  
+    }
+  
+    .container nav:
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      display: block;
+    }
+  
+    .container header {
+      font-size: 100%;
+    }
+  
+  
+  }
+  
+  .container header {
+    grid-area: header;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.78vw;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom: 1px solid black;
+    border-radius: 2px 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;	
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .logo {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    background-color: black;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .container main {
+    grid-area: main;
+    background-color: white;
+    color: black;
+    margin-right: 0%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    padding: 5%;
+    border-style: dashed;
+    border-radius: 1px;
+    border-width: 2px;
+    border-color: #eaecee;
+    font-size: 1.3em;
+    width: 60%;
+    position: centre;
+  
+  }
+
+/* The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit. */
+figure {
+      width:100%;
+      margin-left:0%;
+  }
+
+img {
+    width: 100%
+}
+
+  #blogtop {
+    background-color:;
+
+  }
+  
+  article {
+      width: 75%;
+      margin: 0 auto 45px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .container footer {
+      display: flex;
+      position: block;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: #f5f7f9;
+      color: black;
+      padding: 1rem;
+    margin-top: 10%;
+      height: 30%;
+    
+  }
+  
+  
+  ::selection {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Table */
+  /* #pricetable {
+      border-collapse:collapse;
+      margin:00%;
+      width: 100%;
+  }
+  
+  #pricetable td {
+     border:1px solid lightgrey;
+     text-align: center;
+  
+  }
+  #pricetable th {
+    text-align: center;
+  } */
+  
+  #pricetable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #pricetable th, td {
+    text-align: left;
+    padding: 0.5rem;
+  }
+  
+  #pricetable td {
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+  }
+  
+  #pricetable thead th {
+    border-bottom: 2px solid hsl(0, 0%, 70%);
+  }
+  
+  # pricetable tfoot th {
+    border-top: 2px solid hsl(0, 0%, 70%);
+  }
+  
+  /* blockquote */
+  
+  blockquote {
+    padding: 10px;
+    font-weight: 600;
+  
+  }
+  
+  /* Preformatted Text  */
+  pre {
+      max-width: 100%;
+      padding: 1rem 1.4rem;
+      overflow: auto;
+      border-radius: 4px;
+      background: #23241f;
+  }
+  
+code {
+    background: #eaecee;
+}
+  
+
+
+  /* Button Groups */
+  
+  .btn-group button {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    /* Green background */
+    border: 1px solid black;
+    border-radius: 3px;
+    /* Green border */
+    color: white;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    margin: 5%;
+    font-size: 85%;
+    font-weight: 600;	
+    margin-top: 50px;
+  }
+  
+  .inverse button:hover {
+    background-color: white;
+    /* Green background */
+    border: 1px solid green;
+    /* Green border */
+    color: black;
+    /* White text */
+  
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    color: lightgrey;
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+  
+    .container nav {
+      margin-top: 10%;
+    }
+  
+  
+    .container header {
+      font-size: 100%;
+      display: block;
+  
+    }
+  
+    .container main {
+      font-size: 15px;
+      width: 65%;
+      display: block;
+    }
+  
+    .btn-group button {
+      font-size: 100%;
+    }
+  
+    @media only screen and (max-width: 500px) {
+      .btn-group button {
+        font-size: 75%;
+  
+  @media only screen and (max-width: 400px) {
+      .btn-group button {
+        font-size: 10px;
+  
+      }
