@@ -5,12 +5,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167634546-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-   gtag('config', 'UA-167634546-1');
-  </script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167634546-1');
+
+    </script>
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,59 +22,63 @@
     <link rel="stylesheet" href="https://use.typekit.net/cla8eqv.css">
 
 
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>logline | business and technical documentation services</title>
-   <!-- ****** favicon.io favicons ****** -->
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <!-- ****** favicon.io favicons ****** -->
+    <!-- ****** favicon.io favicons ****** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- ****** favicon.io favicons ****** -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/main.css">
   </head>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
- <link rel="stylesheet" href="https://use.typekit.net/cla8eqv.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cla8eqv.css">
 
 
 
   <div class="container">
     <header><a class="logo" href="https://logline.fr">logline</a></header>
-    
-    <nav>
-      <div class="sidenav">
-        <ul class="sidenavvy">
-          <li><a href="/services">Writing Services</a></li>
-          <li><a href="/about">About logline</a></li>
-          <li><a href="/FAQ">FAQ</a></li>
-          <li><a href="/writing">Our Writing</a></li>
-          <li><a href="/pricing">Pricing/Payment</a></li>
-          <li><a href="mailto:info@logline.fr?subject=I need a quote ASAP!">Email Us &#8599;</a></li>
 
-        </ul>
-      </div>
-    </nav>
-    
-   
+
+
+
 
 
     <main>
       <h1 style="font-weight:normal">logline</h1>
       <hr>
-      <p>Hire a professional writer without the middleman. Flexible, premium quality writing services designed for asynchronous collaboration.</p>
-      <p>We specialize in English-language summaries, minutes and documentation. We can cover EWC/board sessions, conferences and scientific meetings.</p>
+      <b>
+        <p id="demo"></p>
+      </b>
+      <p>We specialize in English-language documentation, summaries and minutes. We cover EWC/board sessions, conferences and scientific meetings.</p>
       <p><b>Learn more</b> about our standard services, read <a style="text-decoration:none;" href="https://www.logline.fr/writing">our writing</a> or email us with any special queries.</p>
-        
- <div class="btn-group" style="width:100%; ">
-       <a style="text-decoration:none;" href="https://www.logline.fr/services"><button style="width:100%; margin:0; margin-top:50px">OUR SERVICES</button></a>
-      </div> 
+      <div class="btn-group" style="width:100%; ">
+        <a style="text-decoration:none;" href="https://www.logline.fr/services"><button style="width:100%; margin:0; margin-top:50px">OUR SERVICES</button></a>
+      </div>
 
     </main>
+    <script>
+      var i = 0;
+      var txt = 'We write things for you.';
+      var speed = 50;
 
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      window.addEventListener("load", typeWriter); 
+
+    </script>
 
 
     <footer> <small></small></footer>
   </div>
+
