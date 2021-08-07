@@ -8,16 +8,17 @@ body {
 }
 
 h1 {
-  font-weight: normal;	
+  font-weight: normal;
   color: #00afff;
 }
 
 h3 {
-  font-weight: normal;	
-  color:grey;
+  font-weight: normal;
+  color: grey;
 }
 
-h1, .container header {
+h1,
+.container header {
   font-family: "Computer Modern Serif", serif;
 }
 
@@ -79,7 +80,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: fit-content;	
+  height: fit-content;
 
 }
 
@@ -112,6 +113,32 @@ hr {
   font-size: 15px;
 }
 
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: white;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #f2f2f2;
+}
+
+.content {
+  padding: 1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: ;
+}
+
+
+
 li a {
   display: block;
   color: black;
@@ -121,9 +148,9 @@ li a {
 }
 
 a {
-    color: #00afff;
-    text-decoration:none;
-  }
+  color: #00afff;
+  text-decoration: none;
+}
 
 /* Change the link color on hover */
 li a:hover {
@@ -193,62 +220,65 @@ ol li:before {
 /* Table of Contents*/
 
 #toc_container {
-    font-family: Helvetica, sans-serif;
-    background: black none repeat scroll 0 0;
-    display: block;
-    text-align: left;
-    margin-left:1px;
-    margin-right: 10%;
-    margin-top: 7.5em;
-    margin-bottom: 1em;
-    border:solid black 1px;
-    border-radius: 2px;
-    padding: 5px;
-    width: 200px;
+  font-family: Helvetica, sans-serif;
+  background: black none repeat scroll 0 0;
+  display: block;
+  text-align: left;
+  margin-left: 1px;
+  margin-right: 10%;
+  margin-top: 7.5em;
+  margin-bottom: 1em;
+  border: solid black 1px;
+  border-radius: 2px;
+  padding: 5px;
+  width: 200px;
 }
 
 .toc_title {
-    font-weight: 200;
-    font-size: 50%;
-    text-align: left;
-    padding: 5%;
-    margin-top:10px;
-    margin-right:1em;
-    width: 190px;
-    text-decoration:none;
-    }
+  font-weight: 200;
+  font-size: 50%;
+  text-align: left;
+  padding: 5%;
+  margin-top: 10px;
+  margin-right: 1em;
+  width: 190px;
+  text-decoration: none;
+}
 
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
+#toc_container li,
+#toc_container ul,
+#toc_container ul li {
+  list-style: outside none none !important;
 
 }
 
 .toc_title:hover {
-    color: grey;
-    }
+  color: grey;
+}
 
 .toclink {
   text-decoration: none;
-  list-style: none; 
-  border:none; 
-  color:white; 
-  font-size: 175%; 
-  font-weight:200}
+  list-style: none;
+  border: none;
+  color: white;
+  font-size: 175%;
+  font-weight: 200
+}
 
 
 
 .container footer {
-	display: flex;
-	position: block;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	background: white;
-	color: black;
-	padding: 1rem;
-        margin-top: 10%;
-	height: 30%;
-  
+  display: flex;
+  position: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 1rem;
+  margin-top: 10%;
+  height: 30%;
+
 }
 
 
@@ -280,7 +310,8 @@ ol li:before {
   max-width: 100%;
 }
 
-#pricetable th, td {
+#pricetable th,
+td {
   text-align: left;
   padding: 0.5rem;
 }
@@ -308,11 +339,11 @@ blockquote {
 
 /* Preformatted Text  */
 pre {
-    padding: 1rem 1.4rem;
-    max-width: 100%;
-    overflow: auto;
-    border-radius: 4px;
-    background: hsl(210, 28%, 93%);
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+  background: hsl(210, 28%, 93%);
 }
 
 
@@ -335,7 +366,7 @@ pre {
   /* Float the buttons side by side */
   margin: 5%;
   font-size: 85%;
-  font-weight: 600;	
+  font-weight: 600;
   margin-top: 50px;
 }
 
@@ -381,7 +412,7 @@ pre {
   }
 
   .sidenavvy {
-    visibility:hidden;
+    visibility: hidden;
     display: none;
 
   }
@@ -400,8 +431,9 @@ pre {
     .btn-group button {
       font-size: 75%;
 
-@media only screen and (max-width: 400px) {
-    .btn-group button {
-      font-size: 10px;
+      @media only screen and (max-width: 400px) {
+        .btn-group button {
+          font-size: 10px;
 
-    }
+        }
+
