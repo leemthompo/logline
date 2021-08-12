@@ -115,6 +115,9 @@ hr {
 
 .collapsible {
   background-color: white;
+  font-family: "Computer Modern Serif", serif;
+  font-style: normal;
+  font-weight: 100;
   color: black;
   cursor: pointer;
   width: 100%;
@@ -133,7 +136,7 @@ hr {
   padding: 1px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 1s ease-out;
   background-color: ;
 }
 
