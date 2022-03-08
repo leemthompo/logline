@@ -65,14 +65,25 @@
     <main>
       <h1 style="font-weight:normal">logline</h1>
       <hr>
+      <div id="like_button_container"></div>
       <b>
-        <p id="demo"></p>
+        <!-- ... REACT TEST ... -->
+        <p id="demo"></p> 
+
       </b>
       <p>We specialize in English-language documentation, summaries and minutes. We cover EWC/board sessions, conferences and scientific meetings.</p>
       <p><b>Learn more</b> about our standard services, read <a style="text-decoration:none;" href="https://www.logline.fr/writing">our writing</a> or email us with any special queries.</p>
       <div class="btn-group" style="width:100%; ">
         <a style="text-decoration:none;" href="https://www.logline.fr/services"><button style="width:100%; margin:0; margin-top:50px">OUR SERVICES</button></a>
       </div>
+      
+       <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 
     </main>
     <script>
